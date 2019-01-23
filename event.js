@@ -1,23 +1,23 @@
 function changeText(obj) {
- 	 obj.innerHTML = "Ooops! Detour ->->";
+ obj.innerHTML = "Ooops! Detour ->->";
 }
 
 function mOver(obj) {
- 	 obj.innerHTML = "Hello World!";  
+  obj.innerHTML = "Hello World!";  
 }
 
 function mOut(obj) {
-  obj.innerHTML = "Mouse Over Me"
+  obj.innerHTML = "Mouse Over Me";
 }
 
 function mUp(obj) {
-  	obj.style.backgroundColor = "blue";
-  	obj.innerHTML = "Thank You!";  
+  obj.style.backgroundColor = "blue";
+  obj.innerHTML = "Thank You!";  
 }
 
 function mDown(obj) {
-  	obj.style.backgroundColor="yellow";
-  	obj.innerHTML = "Release Me";  
+  obj.style.backgroundColor="yellow";
+  obj.innerHTML = "Release Me";  
 }
 
 function upperCase() {
@@ -32,7 +32,7 @@ function myFunction() {
   }, false);
   	
   document.getElementById("alertDiv").addEventListener("click", function() {
-  		alert("You clicked the lightblue element!");
+    alert("You clicked the lightblue element!");
   }, false);
 
 }
