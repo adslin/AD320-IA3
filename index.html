@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Javascript DOM & Events</title>
-	<style>
-		body {background-color: powderblue;}
-		#changeDiv, #moverDiv, #mDiv, #ucaseDiv, #alertDiv { 		 	
-			background-color: lightblue;
- 		 	padding: 20px;}
-		
-		#changeP, #moverP, #mP, #ucaseP, #alertP {
-  			background-color: white; 
-  			font-size: 20px;
-  			border: 1px solid;
-  			padding: 20px;			
-		}	
-	</style>
+    <title>Javascript DOM & Events</title>
+    <style>
+        body {background-color: powderblue;}
+        #changeDiv, #moverDiv, #mDiv, #dbDiv, #sizeDiv {            
+            background-color: lightblue;
+            padding: 20px;}
+        
+        #changeP, #moverP, #mP, #dbP, #sizeP {
+            background-color: white; 
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;          
+        }   
+    </style>
     <script src="event.js"></script>   
 </head>
 
 <body>
     <div id="changeDiv">
-    	<h2>Change Text:</h2>
-    	<p id="changeP" onclick="changeText(this)">Click on this text!</p>
+        <h2>Change Text:</h2>
+        <p id="changeP">Click on this text!</p>
     </div><br>
    
     <div id="moverDiv">
-    	<h2>Over Text:</h2>
-    	<p id="moverP" onmouseover="mOver(this)" onmouseout="mOut(this)">Mouse Over Me</p>
+        <h2>Over Text:</h2>
+        <p id="moverP">Mouse Over Me</p>
     </div><br>
     
     <div id="mDiv">
-    	<h2>Change Text and color:</h2>
-    	<p id="mP" onmouseup="mUp(this)" onmousedown="mDown(this)">Click and hold mouse</p>
+        <h2>Change Text and Background Color:</h2>
+        <p id="mP">Click and hold mouse</p>
     </div><br>
 
-    <div id="ucaseDiv">
-    	<h2>Uppercase input:</h2>
-    	<p><input type="text" id="ucaseP" onkeyup="upperCase();"></p>
+    <div id="dbDiv">
+        <h2>Double-click</h2>
+        <p id="dbP">Double-click me</p>
+    </div><br>   
+
+    <div id="sizeDiv">
+        <h2>Show a user resizes the widow:</h2>
+        <p id="sizeP">Try resizing this browser window</p>
     </div><br>
-
-	<div id="alertDiv">
-	    <h2>Alert:</h2>
-	    <p id="alertP" onclick="myFunction()">Click me!</p>
-    </div><br>
-
-
 </body>
 </html>
